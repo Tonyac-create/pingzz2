@@ -138,7 +138,7 @@ const ConfettiButtonComponent = ({
   };
 
   return (
-    <Button onClick={handleClick} {...props}>
+    <Button onMouseEnter={handleClick} {...props}>
       {children}
     </Button>
   );

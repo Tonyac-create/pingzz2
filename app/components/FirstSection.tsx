@@ -1,5 +1,6 @@
 import PicturesBg from "./PicturesBg";
 import LinkGoogleForm from "./LinkGoogleForm";
+import WordRotate from "@/components/ui/word-rotate";
 
 export default function FirstSection() {
   return (
@@ -24,7 +25,11 @@ export default function FirstSection() {
                   </div>
                   <h1 className="text-2xl md:text-[44px] md:leading-[56px] font-semibold mx-auto">
                     La meilleure app pongiste du marché, qui t’analyse enfin
-                    correctement, et t’aide à réaliser tes perfs rêvés.
+                    correctement, et t’aide à réaliser{" "}
+                    <WordRotate
+                      className="text-2xl md:text-[44px] font-bold text-black dark:text-white"
+                      words={["tes perfs rêvés.", "tes meilleurs scores."]}
+                    />
                   </h1>
                   <LinkGoogleForm />
                 </div>

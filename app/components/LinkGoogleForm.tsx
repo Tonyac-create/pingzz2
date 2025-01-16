@@ -1,14 +1,6 @@
 import { ConfettiButton } from "@/components/ui/confetti";
 import React from "react";
 
-export function ConfettiButtonDemo() {
-  return (
-    <div className="relative">
-      <ConfettiButton>Confetti 🎉</ConfettiButton>
-    </div>
-  );
-}
-
 export default function LinkGoogleForm() {
   return (
     <>
@@ -22,8 +14,15 @@ export default function LinkGoogleForm() {
           Obtiens -20%
         </div>
       </div>
-      <div className="relative">
-        <ConfettiButton className="bg-black px-4 py-3 text-white text-xl font-semibold rounded-xl">Rejoindre la waitlist 🎉</ConfettiButton>
+      <div>
+        <ConfettiButton
+          className="text-xl font-semibold rounded-xl"
+          size={"lg"}
+        >
+          <a href="https://app.youform.com/forms/necvp16w" target="_blank">
+            Rejoindre la waitlist
+          </a>
+        </ConfettiButton>
       </div>
       {/* <a
         href="https://app.youform.com/forms/necvp16w"

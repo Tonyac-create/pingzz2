@@ -1,13 +1,17 @@
+'use client'
+
 import { useState } from 'react'
 import LinksNavbar from './LinksNavbar';
+import Image from 'next/image';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <header className="fixed w-full font-roboto top-0 z-50">
-            <nav className="bg-black text-white flex justify-between items-center px-6 w-[300px] h-[63px] md:w-[450px] rounded-[16px] mx-auto mt-8 animate-slideUpFadeIn">
-                <h1 className="font-medium text-xl">Pingzz</h1>
+            <nav className="bg-black text-white flex justify-between items-center px-6 w-[340px] h-[63px] md:w-[490px] rounded-[16px] mx-auto mt-8 animate-slideUpFadeIn">
+                <Image src={"./logoPingzz.svg"} alt="" width={40} height={40} />
+                <h1 className="font-medium text-xl mr-6">Pingzz</h1>
                 <LinksNavbar className="hidden md:flex gap-4 " />
                 <div className="md:hidden flex justify-end">
                     <button
@@ -17,9 +21,9 @@ export default function NavBar() {
                         aria-label="Toggle menu"
                     >
                         {isMenuOpen ? (
-                            <img src="/xmark.svg" alt="" className='transition-transform duration-400 rotate-90 hover:rotate-180' />
+                            <Image width={30} height={30} src="./xmark.svg" alt="" className='transition-transform duration-400 rotate-90 hover:rotate-180' />
                         ) : (
-                            <img src="/bars.svg" alt="" className='transition-transform duration-400 hover:scale-110' />
+                            <Image width={30} height={30} src="./bars.svg" alt="" className='transition-transform duration-400 hover:scale-110' />
                         )}
                     </button>
                 </div>

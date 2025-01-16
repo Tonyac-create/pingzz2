@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Articulat';
+  src: url('../public/font/articulatcf-regular.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }

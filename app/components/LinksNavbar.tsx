@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function LinksNavbar({ className }) {
+export default function LinksNavbar({ className }: any) {
     return (
         <ul className={`${className}`}>
             <li>

@@ -1,14 +1,14 @@
 import React from 'react';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+// import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 export default function FourSection() {
-    const sectionRef = useIntersectionObserver();
+    // const sectionRef = useIntersectionObserver();
 
     return (
         <section className="flex flex-col-reverse mt-36 md:grid md:grid-cols-5 gap-8 items-center px-5 md:px-20 md:mt-10">
             <div
-                ref={sectionRef}
-                className="col-span-3 relative transform scale-75 opacity-0 transition-all duration-700 ease-in-out"
+                // ref={sectionRef}
+                className="col-span-3 relative"
             >
                 <img
                     src="/imageLebrun.png"

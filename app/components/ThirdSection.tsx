@@ -1,8 +1,8 @@
 import React from 'react';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+// import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 export default function ThirdSection() {
-    const sectionRef = useIntersectionObserver();
+    // const sectionRef = useIntersectionObserver();
 
     return (
         <section className="flex flex-col md:grid md:grid-cols-5 gap-8 items-center px-5 md:px-20">
@@ -18,12 +18,12 @@ export default function ThirdSection() {
                 </p>
             </div>
             <div
-                ref={sectionRef}
-                className="col-span-3 relative transform scale-75 opacity-0 transition-all duration-700 ease-in-out"
+                // ref={sectionRef}
+                className="col-span-3 relative"
             >
-                <img src="/imageProgram.png" alt="" className="w-3/5 md:w-[33%] h-auto mx-auto" />
-                <img src="/softCard.png" alt="" className="absolute top-1/4 left-[11%] w-[27%]" />
-                <img src="/softCardBlack.png" alt="" className="absolute top-[60%] left-[60%] w-[27%]" />
+                <img src="./imageProgram.png" alt="" className="w-3/5 md:w-[33%] h-auto mx-auto" />
+                <img src="./softCard.png" alt="" className="absolute top-1/4 left-[11%] w-[27%]" />
+                <img src="./softCardBlack.png" alt="" className="absolute top-[60%] left-[60%] w-[27%]" />
             </div>
         </section>
     );

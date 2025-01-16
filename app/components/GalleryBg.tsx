@@ -9,7 +9,7 @@ const Gallery: React.FC<GalleryProps> = ({ imagePaths }) => {
     <>
       {imagePaths.map((path, index) => (
         <div key={index} className="max-w-[6.25rem] md:max-w-[8.75rem]">
-          <Image width={140} height={140} src={path} alt={`Image ${index + 1}`} />
+          <Image width={140} height={140} src={path} alt={`Image ${index + 1}`} className="object-cover"/>
         </div>
       ))}
     </>
